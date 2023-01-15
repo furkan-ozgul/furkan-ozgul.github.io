@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Warming</title>
+    <style>
+     @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+
+
+.line-1{
+    position: absolute;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 60px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+    color: #21355a;
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+    </style>
+</head>
+<body>
+  <div class="header">
+    <a href="index.html"> <img style="width: 160px;height: 65px;margin-top: -20px;" class="logo" src="images/logo.png" alt="logo"></a> 
+    <div class="allDropdowns">
+      <div class="dropdown">
+          <a href="articles.html" class="dropbtn">Articles</a>
+          <div class="dropdown-content">
+          <a href="all_articles.html">My Articles</a>
+          <a href="write_article.html">Write Article</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="solutions.html"class="dropbtn">Solutions</a>
+          <div class="dropdown-content">
+          <a href="write_solutions.html">Write Solutions</a>
+          </div>
+        </div>
+        
+        <div class="dropdown">
+        <a href="facts.html" class="dropbtn">Facts</a>
+        </div>
+
+        <div class="dropdown">
+        <a href="more.html" class="dropbtn">More</a>
+    
+        </div>
+      </div>
+    </div>
+
+    
+    <article class="card" style="width: 30%;float: right;margin-right: 11%;margin-top: 10%;">
+      <header>
+        <h3 class='header' style="margin-top: 1px ">
+          Carbon Footprint Calculation
+        </h3>
+      </header>
+      
+      FUEL consumption (g/km): <input type="text" id="fuel"> 
+      Emission factor (kg/km): <input type="text" id="emusyon">
+
+      <div style="margin-top: 2%;" id="Sonuc"></div>
+
+
+
+      <button onclick="hesaplama()" class="hbtn hb-fill-right" >Calculate</button>
+    </article>
+      <h1 class="mainTitle">Let's act together to control <br> <p class="gbTitle"> <p class="line-1 anim-typewriter" style="margin-left: -100px;">Global Warming !</p></h1>
+</body>
+</html>

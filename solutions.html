@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        background-image: none;
+        background-color: #8190a1  !important;
+      }
+
+      .main {
+              display: flex;
+            flex-direction: row;
+            font-size: 30px;
+            padding: 5px;
+            width: 400px;
+        }
+  
+        .main div {
+            margin: 10px 20px;
+            width: 100px;
+        }
+
+        @keyframes filling {
+  from{
+    background-position: center 25%;
+  }
+  to {
+    background-position: center 50%;
+  }
+}
+
+.container-text {
+  text-align: center;
+  background-image:  url(https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color:  #FFFFFF;
+  padding-top: 20px;
+  font-size: 170px;
+  font-family: 'Bungee', cursive;
+  animation: filling 3s ease forwards;
+}
+    </style>
+</head>
+<body>
+  <div class="header">
+    <a href="index.html"> <img style="width: 160px;height: 65px;margin-top: -20px;" class="logo" src="images/logo.png" alt="logo"></a> 
+    <div class="allDropdowns">
+      <div class="dropdown">
+          <a href="articles.html" class="dropbtn">Articles</a>
+          <div class="dropdown-content">
+          <a href="all_articles.html">My Articles</a>
+          <a href="write_article.html">Write Article</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="solutions.html"class="dropbtn">Solutions</a>
+          <div class="dropdown-content">
+          <a href="write_solutions.html">Write Solutions</a>
+          </div>
+        </div>
+        
+        <div class="dropdown">
+        <a href="facts.html" class="dropbtn">Facts</a>
+        </div>
+
+        <div class="dropdown">
+        <a href="more.html" class="dropbtn">More</a>
+    
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-text">
+      Nature
+  </div>
+
+    <div class="totalCards">
+    
+    <div class="main">
+      <div><img class="yuvarlakResim" src="images/image1.jpg" alt="" style="border-radius: 50%;width: 200px;height: 200px !important;max-width: 200%;"></div>
+      <div><article class="card" style="width: 700%;margin-left: 120%;">
+        <p style="font-size: 13px;">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+      </article></div>
+  </div>
+
+  <div class="main">
+    <div><img class="yuvarlakResim" src="images/img4.jpg" alt="" style="border-radius: 50%;width: 200px;height: 200px !important;max-width: 200%;"></div>
+    <div><article class="card" style="width: 700%;margin-left: 120%;">
+      <p style="font-size: 13px;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+
+    </article></div>
+</div>
+
+<div class="main">
+  <div><img class="yuvarlakResim" src="images/img5.jpg" alt="" style="border-radius: 50%;width: 200px;height: 200px !important;max-width: 200%;"></div>
+  <div><article class="card" style="width: 700%;margin-left: 120%;">
+    <p style="font-size: 13px;">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+
+  </article></div>
+</div>
+        
+  </div>
+       
+</body>
+</html>
